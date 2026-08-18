@@ -1,0 +1,9 @@
+{
+  "model": "qwen3.5:9b",
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "seed": 42,
+  "max_tokens": 512,
+  "think": false,
+  "endpoint": "http://127.0.0.1:11434/api/chat"
+}

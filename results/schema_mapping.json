@@ -1,0 +1,50 @@
+{
+  "files": {
+    "data\\processed\\02_Demand_Points_Morning_Peak.csv": {
+      "role": "Morning demand",
+      "columns": {
+        "demand_id": "i (demand location identifier)",
+        "mobility_i": "raw mobility activity intensity; normalized to w_it"
+      }
+    },
+    "data\\processed\\03_Demand_Points_Evening_Peak.csv": {
+      "role": "Evening demand",
+      "columns": {
+        "demand_id": "i (demand location identifier)",
+        "mobility_i": "raw mobility activity intensity; normalized to w_it"
+      }
+    },
+    "data\\processed\\04_Demand_Points_Night.csv": {
+      "role": "Night demand",
+      "columns": {
+        "demand_id": "i (demand location identifier)",
+        "mobility_i": "raw mobility activity intensity; normalized to w_it"
+      }
+    },
+    "data\\processed\\01_Shelter_Candidates_Hazard_438.csv": {
+      "role": "shelter candidates and hazard feasibility",
+      "columns": {
+        "candidate_id": "j (candidate shelter identifier)",
+        "safe_z12": "a_jh for moderate hazard constraint",
+        "safe_z123": "a_jh for strict hazard constraint"
+      },
+      "derived": {
+        "baseline": "a_jh = 1 for every candidate"
+      }
+    },
+    "data\\processed\\od\\OD.csv": {
+      "role": "OD road-network distances and reachability",
+      "columns": {
+        "demand_id": "i (demand location identifier)",
+        "candidate_id": "j (candidate shelter identifier)",
+        "network_distance_m": "d_ij (road-network distance, metres)",
+        "reachable": "r_ij (network reachability indicator)"
+      }
+    }
+  },
+  "hazard_scenarios": {
+    "baseline": "all candidates feasible",
+    "moderate": "candidate feasibility from safe_z12",
+    "strict": "candidate feasibility from safe_z123"
+  }
+}

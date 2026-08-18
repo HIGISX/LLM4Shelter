@@ -1,0 +1,8 @@
+numpy>=2.0
+pandas>=2.2
+matplotlib>=3.8
+gurobipy>=11.0
+jsonschema>=4.20
+PyYAML>=6.0
+requests>=2.31
+

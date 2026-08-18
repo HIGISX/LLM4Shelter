@@ -1,0 +1,10 @@
+﻿configuration,request_type,n,schema_valid_rate,exact_match_rate,valid_executable_rate,detection_accuracy,false_acceptance_rate,end_to_end_solution_match_rate
+L1,simple,20,0.0,0.0,0.0,,,0.0
+L1,composite,20,0.05,0.0,0.0,,,0.0
+L1,ambiguous_invalid,20,0.0,,,0.5,0.0,
+L2,simple,20,1.0,0.9,0.9,,,0.9
+L2,composite,20,1.0,0.9,0.9,,,0.9
+L2,ambiguous_invalid,20,1.0,,,0.5,0.05,
+L3-Final,ambiguous_invalid,20,1.0,,,0.6,0.0,
+L3-Final,composite,20,1.0,0.75,0.75,,,0.75
+L3-Final,simple,20,1.0,0.75,0.75,,,0.75

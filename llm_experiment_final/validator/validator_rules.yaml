@@ -1,0 +1,114 @@
+version: validator_v1
+description: Fixed deterministic execution-safety rules for E5-Final.
+principles:
+  - downgrade_only
+  - no_gold_access
+  - no_parameter_repair
+  - no_llm_call
+  - objective_default_allowed
+domains:
+  status: [valid, needs_clarification, invalid]
+  time_scenario: [morning, evening, night]
+  hazard_scenario: [baseline, moderate, strict]
+  p_min: 5
+  p_max: 15
+  objective: weighted_p_median
+time_patterns:
+  morning:
+    - 早高峰
+    - 早间高峰
+    - 上午高峰
+    - 早通勤高峰
+    - 早晨通勤高峰
+    - 早晨高峰
+  evening:
+    - 晚高峰
+    - 晚间高峰
+    - 傍晚高峰
+    - 傍晚通勤高峰
+    - 下午通勤高峰
+    - 下班高峰
+    - 下班时段
+  night:
+    - 夜间
+    - 深夜
+    - 夜深时段
+ambiguous_time_patterns:
+  - 晚上
+  - 白天
+  - 通勤时段
+  - 通勤高峰时段
+  - 高峰期
+  - 某个繁忙时段
+  - 稍晚一些
+hazard_patterns:
+  baseline:
+    - baseline
+    - 基准情景
+    - 基准候选
+    - 基准安全情景
+    - 完整候选集
+    - 完整候选集合
+    - 保留完整候选
+    - 不额外排除
+    - 不设置额外的风险排除
+    - 不设置额外风险限制
+    - 无额外候选排除
+    - 不作额外候选排除
+  moderate:
+    - moderate
+    - 中等风险约束
+    - 中等安全约束
+    - 中等灾害候选约束
+    - 中等程度候选约束
+    - 中等程度(?:的)?(?:灾害)?候选约束
+    - 中等候选约束
+    - 中等候选限制
+    - 中等候选可行性限制
+    - 中等候选情景
+    - 中等灾害约束
+    - 中等风险排除
+    - 排除较高风险候选设施
+  strict:
+    - strict
+    - 严格风险约束
+    - 严格灾害约束
+    - 严格候选约束
+    - 严格候选限制
+    - 严格候选可行性
+    - 严格情景
+    - 最严格
+    - 扩大风险排除范围
+ambiguous_hazard_patterns:
+  - 安全一些
+  - 比较安全
+  - 尽量安全
+  - 避开风险
+  - 采用安全避难所
+  - 风险低一点
+  - 有一定风险排除
+unsupported_objective_patterns:
+  - maximize coverage
+  - 最大覆盖
+  - 最大化覆盖人口
+  - minimize rental cost
+  - 最小租金
+  - max-min fairness
+  - 公平性最大化
+  - p-center
+  - 最小化最大距离
+direct_llm_location_patterns:
+  - LLM直接给出最终位置
+  - LLM自己选点
+  - 直接判断坐标
+  - 直接给出.*最佳避难所
+  - 不要调用优化器
+  - 不要调用优化模型
+  - 直接返回坐标
+  - 跳过求解器
+indefinite_p_patterns:
+  - 一些(?:安全的)?避难所
+  - 若干(?:个|处|座)?(?:避难所|避难设施|避难点|设施)
+  - 几个(?:避难所|避难设施|避难点|设施)
+  - 适量(?:的)?(?:避难所|避难设施|避难点|设施)
+  - 设施数量稍微多一些

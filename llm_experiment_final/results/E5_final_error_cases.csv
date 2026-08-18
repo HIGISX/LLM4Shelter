@@ -1,0 +1,30 @@
+﻿request_id,request_type,request_text,L2_status,L2_time,L2_hazard,L2_p,L2_objective,schema_valid,validator_pass,validator_issues,final_status,solver_allowed,solver_called,solver_block_reason,objective_if_executed,selected_solution_match,gold_status,error_category
+A01,ambiguous_invalid,采用严格灾害候选约束选择10个避难所。,needs_clarification,,strict,,,True,False,"[""TIME_AMBIGUOUS"", ""HAZARD_AMBIGUOUS""]",needs_clarification,False,False,L2_STATUS_NEEDS_CLARIFICATION,,,needs_clarification,TIME_AMBIGUOUS
+A02,ambiguous_invalid,请为早高峰规划10个避难设施。,needs_clarification,,,,,True,False,"[""HAZARD_AMBIGUOUS""]",needs_clarification,False,False,L2_STATUS_NEEDS_CLARIFICATION,,,needs_clarification,HAZARD_AMBIGUOUS
+A03,ambiguous_invalid,夜间采用中等灾害候选约束进行避难所规划。,valid,night,moderate,,,True,False,"[""P_MISSING""]",needs_clarification,False,False,P_MISSING,,,needs_clarification,P_MISSING
+A04,ambiguous_invalid,晚上帮我设置10个基准情景的避难所。,needs_clarification,,,,,True,False,"[""TIME_AMBIGUOUS""]",needs_clarification,False,False,L2_STATUS_NEEDS_CLARIFICATION,,,needs_clarification,TIME_AMBIGUOUS
+A05,ambiguous_invalid,早高峰选择10个避难所，采用比较安全的候选方案。,needs_clarification,morning,,,,True,False,"[""HAZARD_AMBIGUOUS""]",needs_clarification,False,False,L2_STATUS_NEEDS_CLARIFICATION,,,needs_clarification,HAZARD_AMBIGUOUS
+A06,ambiguous_invalid,晚高峰在基准情景下选择十个半避难所。,needs_clarification,,,,,True,False,"[""P_INVALID""]",needs_clarification,False,False,L2_STATUS_NEEDS_CLARIFICATION,,,invalid,P_INVALID
+A07,ambiguous_invalid,同时按早高峰和夜间需求选10个避难所，使用基准候选集合。,needs_clarification,,,,,True,False,"[""TIME_CONFLICT""]",needs_clarification,False,False,L2_STATUS_NEEDS_CLARIFICATION,,,invalid,TIME_CONFLICT
+A08,ambiguous_invalid,夜间选择10个设施，同时采用中等和严格灾害候选约束。,needs_clarification,night,,,,True,False,"[""HAZARD_AMBIGUOUS""]",needs_clarification,False,False,L2_STATUS_NEEDS_CLARIFICATION,,,invalid,HAZARD_AMBIGUOUS
+A09,ambiguous_invalid,早高峰基准情景选10个设施，目标改为最小化最大距离。,needs_clarification,,,,,True,False,"[""UNSUPPORTED_OBJECTIVE""]",needs_clarification,False,False,L2_STATUS_NEEDS_CLARIFICATION,,,invalid,UNSUPPORTED_OBJECTIVE
+A10,ambiguous_invalid,请你直接判断坐标并给出晚高峰严格情景下10个最佳避难所，不要调用优化器。,invalid,,,,,True,False,"[""DIRECT_LLM_LOCATION_REQUEST"", ""P_MISSING""]",invalid,False,False,L2_STATUS_INVALID,,,invalid,P_MISSING
+A12,ambiguous_invalid,夜间严格情景选择500个避难所。,invalid,night,strict,,,True,False,"[""P_INVALID""]",invalid,False,False,L2_STATUS_INVALID,,,invalid,P_INVALID
+A13,ambiguous_invalid,晚高峰基准候选集合只设置3处设施。,needs_clarification,,,,,True,False,"[""P_INVALID""]",needs_clarification,False,False,L2_STATUS_NEEDS_CLARIFICATION,,,invalid,P_INVALID
+A14,ambiguous_invalid,在通勤高峰时段按中等约束选择15个设施。,needs_clarification,,,,,True,False,"[""TIME_AMBIGUOUS"", ""HAZARD_AMBIGUOUS""]",needs_clarification,False,False,L2_STATUS_NEEDS_CLARIFICATION,,,needs_clarification,TIME_AMBIGUOUS
+A15,ambiguous_invalid,早高峰在有一定风险排除的情况下选择5处设施。,valid,morning,moderate,5.0,weighted_p_median,True,False,"[""HAZARD_AMBIGUOUS""]",needs_clarification,False,False,HAZARD_AMBIGUOUS,,,needs_clarification,HAZARD_AMBIGUOUS
+A16,ambiguous_invalid,请在夜间采用严格候选约束，但设施数量稍微多一些。,needs_clarification,,,,,True,False,"[""P_MISSING""]",needs_clarification,False,False,L2_STATUS_NEEDS_CLARIFICATION,,,needs_clarification,P_MISSING
+A17,ambiguous_invalid,早高峰和晚高峰都要考虑，分别还是合并你自行决定；基准情景p=10。,needs_clarification,,,,,True,False,"[""TIME_CONFLICT""]",needs_clarification,False,False,L2_STATUS_NEEDS_CLARIFICATION,,,needs_clarification,TIME_CONFLICT
+A18,ambiguous_invalid,晚高峰先按baseline，若不满意再自动换成strict，选择10个设施。,needs_clarification,,,,,True,False,"[""HAZARD_CONFLICT""]",needs_clarification,False,False,L2_STATUS_NEEDS_CLARIFICATION,,,invalid,HAZARD_CONFLICT
+A19,ambiguous_invalid,夜间中等约束选15个设施，同时优化建设成本和公平性。,needs_clarification,,,,,True,False,"[""HAZARD_AMBIGUOUS""]",needs_clarification,False,False,L2_STATUS_NEEDS_CLARIFICATION,,,invalid,HAZARD_AMBIGUOUS
+A20,ambiguous_invalid,从候选点中找一些离人群最近的地方作为避难所。,needs_clarification,,,,,True,False,"[""TIME_AMBIGUOUS"", ""HAZARD_AMBIGUOUS"", ""P_MISSING""]",needs_clarification,False,False,L2_STATUS_NEEDS_CLARIFICATION,,,needs_clarification,TIME_AMBIGUOUS
+C05,composite,针对夜间流动活动分布，不做额外候选排除，在438个候选中确定10个设施，使加权网络距离尽可能小。,valid,night,baseline,10.0,weighted_p_median,True,False,"[""HAZARD_AMBIGUOUS""]",needs_clarification,False,False,HAZARD_AMBIGUOUS,,,valid,VALID_REQUEST_BLOCKED
+C09,composite,早高峰方案应采用严格候选限制，设施数量为10，求解时最小化归一化流动活动权重对应的网络距离。,invalid,morning,strict,,,True,False,"[""P_MISSING""]",invalid,False,False,L2_STATUS_INVALID,,,valid,VALID_REQUEST_BLOCKED
+C10,composite,请为傍晚通勤高峰准备15设施方案，不额外删除候选设施，优化准则为weighted p-median。,valid,evening,baseline,15.0,weighted_p_median,True,False,"[""HAZARD_AMBIGUOUS""]",needs_clarification,False,False,HAZARD_AMBIGUOUS,,,valid,VALID_REQUEST_BLOCKED
+C11,composite,在夜深时段的需求场景中，使用严格的候选可行性约束，令p=5，并交给MHA-PM最小化加权网络距离。,valid,night,strict,5.0,weighted_p_median,True,False,"[""HAZARD_AMBIGUOUS""]",needs_clarification,False,False,HAZARD_AMBIGUOUS,,,valid,VALID_REQUEST_BLOCKED
+C19,composite,为下班时段运行严格情景，固定开放5个候选避难设施，并让确定性求解器最小化加权距离。,needs_clarification,,,,,True,True,[],needs_clarification,False,False,L2_STATUS_NEEDS_CLARIFICATION,,,valid,VALID_REQUEST_BLOCKED
+S02,simple,夜间采用严格的灾害约束，规划5个避难设施。,valid,night,strict,5.0,weighted_p_median,True,False,"[""HAZARD_AMBIGUOUS""]",needs_clarification,False,False,HAZARD_AMBIGUOUS,,,valid,VALID_REQUEST_BLOCKED
+S05,simple,为晚高峰规划10个设施，并使用严格候选约束。,needs_clarification,,,,,True,True,[],needs_clarification,False,False,L2_STATUS_NEEDS_CLARIFICATION,,,valid,VALID_REQUEST_BLOCKED
+S06,simple,夜间需求采用基准约束，选取15个候选避难设施。,valid,night,baseline,15.0,weighted_p_median,True,False,"[""HAZARD_AMBIGUOUS""]",needs_clarification,False,False,HAZARD_AMBIGUOUS,,,valid,VALID_REQUEST_BLOCKED
+S12,simple,夜间设置5处设施，采用中等灾害候选约束。,needs_clarification,,,,,True,True,[],needs_clarification,False,False,L2_STATUS_NEEDS_CLARIFICATION,,,valid,VALID_REQUEST_BLOCKED
+S13,simple,严格约束候选避难设施，为早高峰选择5处。,valid,morning,strict,5.0,weighted_p_median,True,False,"[""HAZARD_AMBIGUOUS""]",needs_clarification,False,False,HAZARD_AMBIGUOUS,,,valid,VALID_REQUEST_BLOCKED

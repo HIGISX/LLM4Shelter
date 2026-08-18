@@ -1,0 +1,244 @@
+﻿scenario_id,check,passed,detail
+Morning_baseline_p5,selected shelter count equals p,True,"selected=5, p=5"
+Morning_baseline_p5,each demand assigned exactly once,True,"rows=61, unique_demands=61"
+Morning_baseline_p5,assignments only use selected shelters,True,assigned_shelters=5
+Morning_baseline_p5,selected shelters hazard feasible,True,hazard=baseline
+Morning_baseline_p5,assignments use reachable OD pairs,True,assignments=61
+Morning_baseline_p5,objective equals assignment recomputation,True,"model=2400.711773209230, recomputed=2400.711773209230, abs_diff=0.000e+00"
+Morning_baseline_p5,normalized demand weights sum to 1,True,sum=0.9999999999999999
+Morning_baseline_p5,Gurobi status recorded as OPTIMAL,True,OPTIMAL
+Morning_baseline_p5,deterministic solver configuration,True,"Gurobi Threads=1, Seed=0, ConcurrentMIP=1; no random heuristic or learning component"
+Morning_baseline_p10,selected shelter count equals p,True,"selected=10, p=10"
+Morning_baseline_p10,each demand assigned exactly once,True,"rows=61, unique_demands=61"
+Morning_baseline_p10,assignments only use selected shelters,True,assigned_shelters=10
+Morning_baseline_p10,selected shelters hazard feasible,True,hazard=baseline
+Morning_baseline_p10,assignments use reachable OD pairs,True,assignments=61
+Morning_baseline_p10,objective equals assignment recomputation,True,"model=1654.034470174065, recomputed=1654.034470174065, abs_diff=4.547e-13"
+Morning_baseline_p10,normalized demand weights sum to 1,True,sum=0.9999999999999999
+Morning_baseline_p10,Gurobi status recorded as OPTIMAL,True,OPTIMAL
+Morning_baseline_p10,deterministic solver configuration,True,"Gurobi Threads=1, Seed=0, ConcurrentMIP=1; no random heuristic or learning component"
+Morning_baseline_p15,selected shelter count equals p,True,"selected=15, p=15"
+Morning_baseline_p15,each demand assigned exactly once,True,"rows=61, unique_demands=61"
+Morning_baseline_p15,assignments only use selected shelters,True,assigned_shelters=15
+Morning_baseline_p15,selected shelters hazard feasible,True,hazard=baseline
+Morning_baseline_p15,assignments use reachable OD pairs,True,assignments=61
+Morning_baseline_p15,objective equals assignment recomputation,True,"model=1259.956822713689, recomputed=1259.956822713689, abs_diff=0.000e+00"
+Morning_baseline_p15,normalized demand weights sum to 1,True,sum=0.9999999999999999
+Morning_baseline_p15,Gurobi status recorded as OPTIMAL,True,OPTIMAL
+Morning_baseline_p15,deterministic solver configuration,True,"Gurobi Threads=1, Seed=0, ConcurrentMIP=1; no random heuristic or learning component"
+Morning_moderate_p5,selected shelter count equals p,True,"selected=5, p=5"
+Morning_moderate_p5,each demand assigned exactly once,True,"rows=61, unique_demands=61"
+Morning_moderate_p5,assignments only use selected shelters,True,assigned_shelters=5
+Morning_moderate_p5,selected shelters hazard feasible,True,hazard=moderate
+Morning_moderate_p5,assignments use reachable OD pairs,True,assignments=61
+Morning_moderate_p5,objective equals assignment recomputation,True,"model=2400.711773209230, recomputed=2400.711773209230, abs_diff=0.000e+00"
+Morning_moderate_p5,normalized demand weights sum to 1,True,sum=0.9999999999999999
+Morning_moderate_p5,Gurobi status recorded as OPTIMAL,True,OPTIMAL
+Morning_moderate_p5,deterministic solver configuration,True,"Gurobi Threads=1, Seed=0, ConcurrentMIP=1; no random heuristic or learning component"
+Morning_moderate_p10,selected shelter count equals p,True,"selected=10, p=10"
+Morning_moderate_p10,each demand assigned exactly once,True,"rows=61, unique_demands=61"
+Morning_moderate_p10,assignments only use selected shelters,True,assigned_shelters=10
+Morning_moderate_p10,selected shelters hazard feasible,True,hazard=moderate
+Morning_moderate_p10,assignments use reachable OD pairs,True,assignments=61
+Morning_moderate_p10,objective equals assignment recomputation,True,"model=1657.730253213732, recomputed=1657.730253213732, abs_diff=0.000e+00"
+Morning_moderate_p10,normalized demand weights sum to 1,True,sum=0.9999999999999999
+Morning_moderate_p10,Gurobi status recorded as OPTIMAL,True,OPTIMAL
+Morning_moderate_p10,deterministic solver configuration,True,"Gurobi Threads=1, Seed=0, ConcurrentMIP=1; no random heuristic or learning component"
+Morning_moderate_p15,selected shelter count equals p,True,"selected=15, p=15"
+Morning_moderate_p15,each demand assigned exactly once,True,"rows=61, unique_demands=61"
+Morning_moderate_p15,assignments only use selected shelters,True,assigned_shelters=15
+Morning_moderate_p15,selected shelters hazard feasible,True,hazard=moderate
+Morning_moderate_p15,assignments use reachable OD pairs,True,assignments=61
+Morning_moderate_p15,objective equals assignment recomputation,True,"model=1293.042315926355, recomputed=1293.042315926355, abs_diff=2.274e-13"
+Morning_moderate_p15,normalized demand weights sum to 1,True,sum=0.9999999999999999
+Morning_moderate_p15,Gurobi status recorded as OPTIMAL,True,OPTIMAL
+Morning_moderate_p15,deterministic solver configuration,True,"Gurobi Threads=1, Seed=0, ConcurrentMIP=1; no random heuristic or learning component"
+Morning_strict_p5,selected shelter count equals p,True,"selected=5, p=5"
+Morning_strict_p5,each demand assigned exactly once,True,"rows=61, unique_demands=61"
+Morning_strict_p5,assignments only use selected shelters,True,assigned_shelters=5
+Morning_strict_p5,selected shelters hazard feasible,True,hazard=strict
+Morning_strict_p5,assignments use reachable OD pairs,True,assignments=61
+Morning_strict_p5,objective equals assignment recomputation,True,"model=2400.711773209230, recomputed=2400.711773209230, abs_diff=0.000e+00"
+Morning_strict_p5,normalized demand weights sum to 1,True,sum=0.9999999999999999
+Morning_strict_p5,Gurobi status recorded as OPTIMAL,True,OPTIMAL
+Morning_strict_p5,deterministic solver configuration,True,"Gurobi Threads=1, Seed=0, ConcurrentMIP=1; no random heuristic or learning component"
+Morning_strict_p10,selected shelter count equals p,True,"selected=10, p=10"
+Morning_strict_p10,each demand assigned exactly once,True,"rows=61, unique_demands=61"
+Morning_strict_p10,assignments only use selected shelters,True,assigned_shelters=10
+Morning_strict_p10,selected shelters hazard feasible,True,hazard=strict
+Morning_strict_p10,assignments use reachable OD pairs,True,assignments=61
+Morning_strict_p10,objective equals assignment recomputation,True,"model=1661.804909382321, recomputed=1661.804909382321, abs_diff=4.547e-13"
+Morning_strict_p10,normalized demand weights sum to 1,True,sum=0.9999999999999999
+Morning_strict_p10,Gurobi status recorded as OPTIMAL,True,OPTIMAL
+Morning_strict_p10,deterministic solver configuration,True,"Gurobi Threads=1, Seed=0, ConcurrentMIP=1; no random heuristic or learning component"
+Morning_strict_p15,selected shelter count equals p,True,"selected=15, p=15"
+Morning_strict_p15,each demand assigned exactly once,True,"rows=61, unique_demands=61"
+Morning_strict_p15,assignments only use selected shelters,True,assigned_shelters=15
+Morning_strict_p15,selected shelters hazard feasible,True,hazard=strict
+Morning_strict_p15,assignments use reachable OD pairs,True,assignments=61
+Morning_strict_p15,objective equals assignment recomputation,True,"model=1307.743419102595, recomputed=1307.743419102595, abs_diff=0.000e+00"
+Morning_strict_p15,normalized demand weights sum to 1,True,sum=0.9999999999999999
+Morning_strict_p15,Gurobi status recorded as OPTIMAL,True,OPTIMAL
+Morning_strict_p15,deterministic solver configuration,True,"Gurobi Threads=1, Seed=0, ConcurrentMIP=1; no random heuristic or learning component"
+Evening_baseline_p5,selected shelter count equals p,True,"selected=5, p=5"
+Evening_baseline_p5,each demand assigned exactly once,True,"rows=61, unique_demands=61"
+Evening_baseline_p5,assignments only use selected shelters,True,assigned_shelters=5
+Evening_baseline_p5,selected shelters hazard feasible,True,hazard=baseline
+Evening_baseline_p5,assignments use reachable OD pairs,True,assignments=61
+Evening_baseline_p5,objective equals assignment recomputation,True,"model=2329.973540118495, recomputed=2329.973540118495, abs_diff=0.000e+00"
+Evening_baseline_p5,normalized demand weights sum to 1,True,sum=1.0000000000000000
+Evening_baseline_p5,Gurobi status recorded as OPTIMAL,True,OPTIMAL
+Evening_baseline_p5,deterministic solver configuration,True,"Gurobi Threads=1, Seed=0, ConcurrentMIP=1; no random heuristic or learning component"
+Evening_baseline_p10,selected shelter count equals p,True,"selected=10, p=10"
+Evening_baseline_p10,each demand assigned exactly once,True,"rows=61, unique_demands=61"
+Evening_baseline_p10,assignments only use selected shelters,True,assigned_shelters=10
+Evening_baseline_p10,selected shelters hazard feasible,True,hazard=baseline
+Evening_baseline_p10,assignments use reachable OD pairs,True,assignments=61
+Evening_baseline_p10,objective equals assignment recomputation,True,"model=1591.658266640572, recomputed=1591.658266640572, abs_diff=2.274e-13"
+Evening_baseline_p10,normalized demand weights sum to 1,True,sum=1.0000000000000000
+Evening_baseline_p10,Gurobi status recorded as OPTIMAL,True,OPTIMAL
+Evening_baseline_p10,deterministic solver configuration,True,"Gurobi Threads=1, Seed=0, ConcurrentMIP=1; no random heuristic or learning component"
+Evening_baseline_p15,selected shelter count equals p,True,"selected=15, p=15"
+Evening_baseline_p15,each demand assigned exactly once,True,"rows=61, unique_demands=61"
+Evening_baseline_p15,assignments only use selected shelters,True,assigned_shelters=15
+Evening_baseline_p15,selected shelters hazard feasible,True,hazard=baseline
+Evening_baseline_p15,assignments use reachable OD pairs,True,assignments=61
+Evening_baseline_p15,objective equals assignment recomputation,True,"model=1241.423256224415, recomputed=1241.423256224414, abs_diff=2.274e-13"
+Evening_baseline_p15,normalized demand weights sum to 1,True,sum=1.0000000000000000
+Evening_baseline_p15,Gurobi status recorded as OPTIMAL,True,OPTIMAL
+Evening_baseline_p15,deterministic solver configuration,True,"Gurobi Threads=1, Seed=0, ConcurrentMIP=1; no random heuristic or learning component"
+Evening_moderate_p5,selected shelter count equals p,True,"selected=5, p=5"
+Evening_moderate_p5,each demand assigned exactly once,True,"rows=61, unique_demands=61"
+Evening_moderate_p5,assignments only use selected shelters,True,assigned_shelters=5
+Evening_moderate_p5,selected shelters hazard feasible,True,hazard=moderate
+Evening_moderate_p5,assignments use reachable OD pairs,True,assignments=61
+Evening_moderate_p5,objective equals assignment recomputation,True,"model=2329.973540118495, recomputed=2329.973540118495, abs_diff=0.000e+00"
+Evening_moderate_p5,normalized demand weights sum to 1,True,sum=1.0000000000000000
+Evening_moderate_p5,Gurobi status recorded as OPTIMAL,True,OPTIMAL
+Evening_moderate_p5,deterministic solver configuration,True,"Gurobi Threads=1, Seed=0, ConcurrentMIP=1; no random heuristic or learning component"
+Evening_moderate_p10,selected shelter count equals p,True,"selected=10, p=10"
+Evening_moderate_p10,each demand assigned exactly once,True,"rows=61, unique_demands=61"
+Evening_moderate_p10,assignments only use selected shelters,True,assigned_shelters=10
+Evening_moderate_p10,selected shelters hazard feasible,True,hazard=moderate
+Evening_moderate_p10,assignments use reachable OD pairs,True,assignments=61
+Evening_moderate_p10,objective equals assignment recomputation,True,"model=1597.882917240498, recomputed=1597.882917240498, abs_diff=2.274e-13"
+Evening_moderate_p10,normalized demand weights sum to 1,True,sum=1.0000000000000000
+Evening_moderate_p10,Gurobi status recorded as OPTIMAL,True,OPTIMAL
+Evening_moderate_p10,deterministic solver configuration,True,"Gurobi Threads=1, Seed=0, ConcurrentMIP=1; no random heuristic or learning component"
+Evening_moderate_p15,selected shelter count equals p,True,"selected=15, p=15"
+Evening_moderate_p15,each demand assigned exactly once,True,"rows=61, unique_demands=61"
+Evening_moderate_p15,assignments only use selected shelters,True,assigned_shelters=15
+Evening_moderate_p15,selected shelters hazard feasible,True,hazard=moderate
+Evening_moderate_p15,assignments use reachable OD pairs,True,assignments=61
+Evening_moderate_p15,objective equals assignment recomputation,True,"model=1256.679857546992, recomputed=1256.679857546992, abs_diff=0.000e+00"
+Evening_moderate_p15,normalized demand weights sum to 1,True,sum=1.0000000000000000
+Evening_moderate_p15,Gurobi status recorded as OPTIMAL,True,OPTIMAL
+Evening_moderate_p15,deterministic solver configuration,True,"Gurobi Threads=1, Seed=0, ConcurrentMIP=1; no random heuristic or learning component"
+Evening_strict_p5,selected shelter count equals p,True,"selected=5, p=5"
+Evening_strict_p5,each demand assigned exactly once,True,"rows=61, unique_demands=61"
+Evening_strict_p5,assignments only use selected shelters,True,assigned_shelters=5
+Evening_strict_p5,selected shelters hazard feasible,True,hazard=strict
+Evening_strict_p5,assignments use reachable OD pairs,True,assignments=61
+Evening_strict_p5,objective equals assignment recomputation,True,"model=2329.973540118495, recomputed=2329.973540118495, abs_diff=0.000e+00"
+Evening_strict_p5,normalized demand weights sum to 1,True,sum=1.0000000000000000
+Evening_strict_p5,Gurobi status recorded as OPTIMAL,True,OPTIMAL
+Evening_strict_p5,deterministic solver configuration,True,"Gurobi Threads=1, Seed=0, ConcurrentMIP=1; no random heuristic or learning component"
+Evening_strict_p10,selected shelter count equals p,True,"selected=10, p=10"
+Evening_strict_p10,each demand assigned exactly once,True,"rows=61, unique_demands=61"
+Evening_strict_p10,assignments only use selected shelters,True,assigned_shelters=10
+Evening_strict_p10,selected shelters hazard feasible,True,hazard=strict
+Evening_strict_p10,assignments use reachable OD pairs,True,assignments=61
+Evening_strict_p10,objective equals assignment recomputation,True,"model=1597.882917240498, recomputed=1597.882917240498, abs_diff=2.274e-13"
+Evening_strict_p10,normalized demand weights sum to 1,True,sum=1.0000000000000000
+Evening_strict_p10,Gurobi status recorded as OPTIMAL,True,OPTIMAL
+Evening_strict_p10,deterministic solver configuration,True,"Gurobi Threads=1, Seed=0, ConcurrentMIP=1; no random heuristic or learning component"
+Evening_strict_p15,selected shelter count equals p,True,"selected=15, p=15"
+Evening_strict_p15,each demand assigned exactly once,True,"rows=61, unique_demands=61"
+Evening_strict_p15,assignments only use selected shelters,True,assigned_shelters=15
+Evening_strict_p15,selected shelters hazard feasible,True,hazard=strict
+Evening_strict_p15,assignments use reachable OD pairs,True,assignments=61
+Evening_strict_p15,objective equals assignment recomputation,True,"model=1256.679857546992, recomputed=1256.679857546992, abs_diff=0.000e+00"
+Evening_strict_p15,normalized demand weights sum to 1,True,sum=1.0000000000000000
+Evening_strict_p15,Gurobi status recorded as OPTIMAL,True,OPTIMAL
+Evening_strict_p15,deterministic solver configuration,True,"Gurobi Threads=1, Seed=0, ConcurrentMIP=1; no random heuristic or learning component"
+Night_baseline_p5,selected shelter count equals p,True,"selected=5, p=5"
+Night_baseline_p5,each demand assigned exactly once,True,"rows=61, unique_demands=61"
+Night_baseline_p5,assignments only use selected shelters,True,assigned_shelters=5
+Night_baseline_p5,selected shelters hazard feasible,True,hazard=baseline
+Night_baseline_p5,assignments use reachable OD pairs,True,assignments=61
+Night_baseline_p5,objective equals assignment recomputation,True,"model=2272.448062043602, recomputed=2272.448062043602, abs_diff=0.000e+00"
+Night_baseline_p5,normalized demand weights sum to 1,True,sum=0.9999999999999998
+Night_baseline_p5,Gurobi status recorded as OPTIMAL,True,OPTIMAL
+Night_baseline_p5,deterministic solver configuration,True,"Gurobi Threads=1, Seed=0, ConcurrentMIP=1; no random heuristic or learning component"
+Night_baseline_p10,selected shelter count equals p,True,"selected=10, p=10"
+Night_baseline_p10,each demand assigned exactly once,True,"rows=61, unique_demands=61"
+Night_baseline_p10,assignments only use selected shelters,True,assigned_shelters=10
+Night_baseline_p10,selected shelters hazard feasible,True,hazard=baseline
+Night_baseline_p10,assignments use reachable OD pairs,True,assignments=61
+Night_baseline_p10,objective equals assignment recomputation,True,"model=1532.326551023853, recomputed=1532.326551023853, abs_diff=2.274e-13"
+Night_baseline_p10,normalized demand weights sum to 1,True,sum=0.9999999999999998
+Night_baseline_p10,Gurobi status recorded as OPTIMAL,True,OPTIMAL
+Night_baseline_p10,deterministic solver configuration,True,"Gurobi Threads=1, Seed=0, ConcurrentMIP=1; no random heuristic or learning component"
+Night_baseline_p15,selected shelter count equals p,True,"selected=15, p=15"
+Night_baseline_p15,each demand assigned exactly once,True,"rows=61, unique_demands=61"
+Night_baseline_p15,assignments only use selected shelters,True,assigned_shelters=15
+Night_baseline_p15,selected shelters hazard feasible,True,hazard=baseline
+Night_baseline_p15,assignments use reachable OD pairs,True,assignments=61
+Night_baseline_p15,objective equals assignment recomputation,True,"model=1197.470994538747, recomputed=1197.470994538747, abs_diff=0.000e+00"
+Night_baseline_p15,normalized demand weights sum to 1,True,sum=0.9999999999999998
+Night_baseline_p15,Gurobi status recorded as OPTIMAL,True,OPTIMAL
+Night_baseline_p15,deterministic solver configuration,True,"Gurobi Threads=1, Seed=0, ConcurrentMIP=1; no random heuristic or learning component"
+Night_moderate_p5,selected shelter count equals p,True,"selected=5, p=5"
+Night_moderate_p5,each demand assigned exactly once,True,"rows=61, unique_demands=61"
+Night_moderate_p5,assignments only use selected shelters,True,assigned_shelters=5
+Night_moderate_p5,selected shelters hazard feasible,True,hazard=moderate
+Night_moderate_p5,assignments use reachable OD pairs,True,assignments=61
+Night_moderate_p5,objective equals assignment recomputation,True,"model=2272.448062043602, recomputed=2272.448062043602, abs_diff=0.000e+00"
+Night_moderate_p5,normalized demand weights sum to 1,True,sum=0.9999999999999998
+Night_moderate_p5,Gurobi status recorded as OPTIMAL,True,OPTIMAL
+Night_moderate_p5,deterministic solver configuration,True,"Gurobi Threads=1, Seed=0, ConcurrentMIP=1; no random heuristic or learning component"
+Night_moderate_p10,selected shelter count equals p,True,"selected=10, p=10"
+Night_moderate_p10,each demand assigned exactly once,True,"rows=61, unique_demands=61"
+Night_moderate_p10,assignments only use selected shelters,True,assigned_shelters=10
+Night_moderate_p10,selected shelters hazard feasible,True,hazard=moderate
+Night_moderate_p10,assignments use reachable OD pairs,True,assignments=61
+Night_moderate_p10,objective equals assignment recomputation,True,"model=1539.248222065436, recomputed=1539.248222065436, abs_diff=2.274e-13"
+Night_moderate_p10,normalized demand weights sum to 1,True,sum=0.9999999999999998
+Night_moderate_p10,Gurobi status recorded as OPTIMAL,True,OPTIMAL
+Night_moderate_p10,deterministic solver configuration,True,"Gurobi Threads=1, Seed=0, ConcurrentMIP=1; no random heuristic or learning component"
+Night_moderate_p15,selected shelter count equals p,True,"selected=15, p=15"
+Night_moderate_p15,each demand assigned exactly once,True,"rows=61, unique_demands=61"
+Night_moderate_p15,assignments only use selected shelters,True,assigned_shelters=15
+Night_moderate_p15,selected shelters hazard feasible,True,hazard=moderate
+Night_moderate_p15,assignments use reachable OD pairs,True,assignments=61
+Night_moderate_p15,objective equals assignment recomputation,True,"model=1220.659904496679, recomputed=1220.659904496679, abs_diff=2.274e-13"
+Night_moderate_p15,normalized demand weights sum to 1,True,sum=0.9999999999999998
+Night_moderate_p15,Gurobi status recorded as OPTIMAL,True,OPTIMAL
+Night_moderate_p15,deterministic solver configuration,True,"Gurobi Threads=1, Seed=0, ConcurrentMIP=1; no random heuristic or learning component"
+Night_strict_p5,selected shelter count equals p,True,"selected=5, p=5"
+Night_strict_p5,each demand assigned exactly once,True,"rows=61, unique_demands=61"
+Night_strict_p5,assignments only use selected shelters,True,assigned_shelters=5
+Night_strict_p5,selected shelters hazard feasible,True,hazard=strict
+Night_strict_p5,assignments use reachable OD pairs,True,assignments=61
+Night_strict_p5,objective equals assignment recomputation,True,"model=2272.448062043602, recomputed=2272.448062043602, abs_diff=0.000e+00"
+Night_strict_p5,normalized demand weights sum to 1,True,sum=0.9999999999999998
+Night_strict_p5,Gurobi status recorded as OPTIMAL,True,OPTIMAL
+Night_strict_p5,deterministic solver configuration,True,"Gurobi Threads=1, Seed=0, ConcurrentMIP=1; no random heuristic or learning component"
+Night_strict_p10,selected shelter count equals p,True,"selected=10, p=10"
+Night_strict_p10,each demand assigned exactly once,True,"rows=61, unique_demands=61"
+Night_strict_p10,assignments only use selected shelters,True,assigned_shelters=10
+Night_strict_p10,selected shelters hazard feasible,True,hazard=strict
+Night_strict_p10,assignments use reachable OD pairs,True,assignments=61
+Night_strict_p10,objective equals assignment recomputation,True,"model=1539.248222065436, recomputed=1539.248222065436, abs_diff=2.274e-13"
+Night_strict_p10,normalized demand weights sum to 1,True,sum=0.9999999999999998
+Night_strict_p10,Gurobi status recorded as OPTIMAL,True,OPTIMAL
+Night_strict_p10,deterministic solver configuration,True,"Gurobi Threads=1, Seed=0, ConcurrentMIP=1; no random heuristic or learning component"
+Night_strict_p15,selected shelter count equals p,True,"selected=15, p=15"
+Night_strict_p15,each demand assigned exactly once,True,"rows=61, unique_demands=61"
+Night_strict_p15,assignments only use selected shelters,True,assigned_shelters=15
+Night_strict_p15,selected shelters hazard feasible,True,hazard=strict
+Night_strict_p15,assignments use reachable OD pairs,True,assignments=61
+Night_strict_p15,objective equals assignment recomputation,True,"model=1222.348799933107, recomputed=1222.348799933107, abs_diff=0.000e+00"
+Night_strict_p15,normalized demand weights sum to 1,True,sum=0.9999999999999998
+Night_strict_p15,Gurobi status recorded as OPTIMAL,True,OPTIMAL
+Night_strict_p15,deterministic solver configuration,True,"Gurobi Threads=1, Seed=0, ConcurrentMIP=1; no random heuristic or learning component"

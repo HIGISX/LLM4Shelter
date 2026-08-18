@@ -1,0 +1,546 @@
+﻿request_id,request_type,raw_request,model,timestamp_utc,raw_response,final_output,final_schema_valid,final_valid,predicted_status,predicted_time_scenario,predicted_hazard_scenario,predicted_p,predicted_objective,predicted_issues,validator_errors
+A01,ambiguous_invalid,采用严格灾害候选约束选择10个避难所。,qwen3.5:9b,2026-08-12T01:40:58.802851+00:00,"{
+  ""status"": ""needs_clarification"",
+  ""time_scenario"": null,
+  ""hazard_scenario"": ""strict"",
+  ""p"": null,
+  ""objective"": null,
+  ""issues"": [
+    ""missing_parameter"",
+    ""ambiguous_time""
+  ]
+}","{""status"": ""needs_clarification"", ""time_scenario"": null, ""hazard_scenario"": ""strict"", ""p"": null, ""objective"": null, ""issues"": [""missing_parameter"", ""ambiguous_time""]}",True,True,needs_clarification,,strict,,,"[""missing_parameter"", ""ambiguous_time""]",[]
+A02,ambiguous_invalid,请为早高峰规划10个避难设施。,qwen3.5:9b,2026-08-12T01:41:00.424084+00:00,"{
+  ""status"": ""needs_clarification"",
+  ""time_scenario"": null,
+  ""hazard_scenario"": null,
+  ""p"": null,
+  ""objective"": null,
+  ""issues"": [
+    ""missing_parameter"",
+    ""ambiguous_time""
+  ]
+}","{""status"": ""needs_clarification"", ""time_scenario"": null, ""hazard_scenario"": null, ""p"": null, ""objective"": null, ""issues"": [""missing_parameter"", ""ambiguous_time""]}",True,True,needs_clarification,,,,,"[""missing_parameter"", ""ambiguous_time""]",[]
+A03,ambiguous_invalid,夜间采用中等灾害候选约束进行避难所规划。,qwen3.5:9b,2026-08-12T01:41:02.103205+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""night"",
+  ""hazard_scenario"": ""moderate"",
+  ""p"": null,
+  ""objective"": null,
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""night"", ""hazard_scenario"": ""moderate"", ""p"": null, ""objective"": null, ""issues"": []}",True,False,valid,night,moderate,,,[],"[""valid status has null core fields: ['p', 'objective']""]"
+A04,ambiguous_invalid,晚上帮我设置10个基准情景的避难所。,qwen3.5:9b,2026-08-12T01:41:03.366420+00:00,"{
+  ""status"": ""needs_clarification"",
+  ""time_scenario"": null,
+  ""hazard_scenario"": null,
+  ""p"": null,
+  ""objective"": null,
+  ""issues"": [
+    ""missing_parameter"",
+    ""ambiguous_time""
+  ]
+}","{""status"": ""needs_clarification"", ""time_scenario"": null, ""hazard_scenario"": null, ""p"": null, ""objective"": null, ""issues"": [""missing_parameter"", ""ambiguous_time""]}",True,True,needs_clarification,,,,,"[""missing_parameter"", ""ambiguous_time""]",[]
+A05,ambiguous_invalid,早高峰选择10个避难所，采用比较安全的候选方案。,qwen3.5:9b,2026-08-12T01:41:05.039815+00:00,"{
+  ""status"": ""needs_clarification"",
+  ""time_scenario"": ""morning"",
+  ""hazard_scenario"": null,
+  ""p"": null,
+  ""objective"": null,
+  ""issues"": [
+    ""missing_parameter"",
+    ""ambiguous_hazard""
+  ]
+}","{""status"": ""needs_clarification"", ""time_scenario"": ""morning"", ""hazard_scenario"": null, ""p"": null, ""objective"": null, ""issues"": [""missing_parameter"", ""ambiguous_hazard""]}",True,True,needs_clarification,morning,,,,"[""missing_parameter"", ""ambiguous_hazard""]",[]
+A06,ambiguous_invalid,晚高峰在基准情景下选择十个半避难所。,qwen3.5:9b,2026-08-12T01:41:06.771014+00:00,"{
+  ""status"": ""needs_clarification"",
+  ""time_scenario"": null,
+  ""hazard_scenario"": null,
+  ""p"": null,
+  ""objective"": null,
+  ""issues"": [
+    ""missing_parameter"",
+    ""ambiguous_time""
+  ]
+}","{""status"": ""needs_clarification"", ""time_scenario"": null, ""hazard_scenario"": null, ""p"": null, ""objective"": null, ""issues"": [""missing_parameter"", ""ambiguous_time""]}",True,True,needs_clarification,,,,,"[""missing_parameter"", ""ambiguous_time""]",[]
+A07,ambiguous_invalid,同时按早高峰和夜间需求选10个避难所，使用基准候选集合。,qwen3.5:9b,2026-08-12T01:41:08.460649+00:00,"{
+  ""status"": ""needs_clarification"",
+  ""time_scenario"": null,
+  ""hazard_scenario"": null,
+  ""p"": null,
+  ""objective"": null,
+  ""issues"": [
+    ""ambiguous_time""
+  ]
+}","{""status"": ""needs_clarification"", ""time_scenario"": null, ""hazard_scenario"": null, ""p"": null, ""objective"": null, ""issues"": [""ambiguous_time""]}",True,True,needs_clarification,,,,,"[""ambiguous_time""]",[]
+A08,ambiguous_invalid,夜间选择10个设施，同时采用中等和严格灾害候选约束。,qwen3.5:9b,2026-08-12T01:41:09.950684+00:00,"{
+  ""status"": ""needs_clarification"",
+  ""time_scenario"": ""night"",
+  ""hazard_scenario"": null,
+  ""p"": null,
+  ""objective"": null,
+  ""issues"": [
+    ""ambiguous_hazard"",
+    ""missing_parameter""
+  ]
+}","{""status"": ""needs_clarification"", ""time_scenario"": ""night"", ""hazard_scenario"": null, ""p"": null, ""objective"": null, ""issues"": [""ambiguous_hazard"", ""missing_parameter""]}",True,True,needs_clarification,night,,,,"[""ambiguous_hazard"", ""missing_parameter""]",[]
+A09,ambiguous_invalid,早高峰基准情景选10个设施，目标改为最小化最大距离。,qwen3.5:9b,2026-08-12T01:41:11.602211+00:00,"{
+  ""status"": ""needs_clarification"",
+  ""time_scenario"": null,
+  ""hazard_scenario"": null,
+  ""p"": null,
+  ""objective"": null,
+  ""issues"": [
+    ""unsupported_objective"",
+    ""missing_parameter""
+  ]
+}","{""status"": ""needs_clarification"", ""time_scenario"": null, ""hazard_scenario"": null, ""p"": null, ""objective"": null, ""issues"": [""unsupported_objective"", ""missing_parameter""]}",True,True,needs_clarification,,,,,"[""unsupported_objective"", ""missing_parameter""]",[]
+A10,ambiguous_invalid,请你直接判断坐标并给出晚高峰严格情景下10个最佳避难所，不要调用优化器。,qwen3.5:9b,2026-08-12T01:41:13.287592+00:00,"{
+  ""status"": ""invalid"",
+  ""time_scenario"": null,
+  ""hazard_scenario"": null,
+  ""p"": null,
+  ""objective"": null,
+  ""issues"": [
+    ""unsupported_objective"",
+    ""missing_parameter""
+  ]
+}","{""status"": ""invalid"", ""time_scenario"": null, ""hazard_scenario"": null, ""p"": null, ""objective"": null, ""issues"": [""unsupported_objective"", ""missing_parameter""]}",True,True,invalid,,,,,"[""unsupported_objective"", ""missing_parameter""]",[]
+A11,ambiguous_invalid,早高峰选5个设施，后面又改为15个；采用中等候选约束。,qwen3.5:9b,2026-08-12T01:41:14.946854+00:00,"{
+  ""status"": ""needs_clarification"",
+  ""time_scenario"": null,
+  ""hazard_scenario"": ""moderate"",
+  ""p"": null,
+  ""objective"": null,
+  ""issues"": [
+    ""conflicting_time"",
+    ""ambiguous_time""
+  ]
+}","{""status"": ""needs_clarification"", ""time_scenario"": null, ""hazard_scenario"": ""moderate"", ""p"": null, ""objective"": null, ""issues"": [""conflicting_time"", ""ambiguous_time""]}",True,True,needs_clarification,,moderate,,,"[""conflicting_time"", ""ambiguous_time""]",[]
+A12,ambiguous_invalid,夜间严格情景选择500个避难所。,qwen3.5:9b,2026-08-12T01:41:16.697062+00:00,"{
+  ""status"": ""invalid"",
+  ""time_scenario"": ""night"",
+  ""hazard_scenario"": ""strict"",
+  ""p"": null,
+  ""objective"": null,
+  ""issues"": [
+    ""missing_parameter"",
+    ""unsupported_objective""
+  ]
+}","{""status"": ""invalid"", ""time_scenario"": ""night"", ""hazard_scenario"": ""strict"", ""p"": null, ""objective"": null, ""issues"": [""missing_parameter"", ""unsupported_objective""]}",True,True,invalid,night,strict,,,"[""missing_parameter"", ""unsupported_objective""]",[]
+A13,ambiguous_invalid,晚高峰基准候选集合只设置3处设施。,qwen3.5:9b,2026-08-12T01:41:18.322464+00:00,"{
+  ""status"": ""needs_clarification"",
+  ""time_scenario"": null,
+  ""hazard_scenario"": null,
+  ""p"": null,
+  ""objective"": null,
+  ""issues"": [
+    ""missing_parameter"",
+    ""ambiguous_hazard""
+  ]
+}","{""status"": ""needs_clarification"", ""time_scenario"": null, ""hazard_scenario"": null, ""p"": null, ""objective"": null, ""issues"": [""missing_parameter"", ""ambiguous_hazard""]}",True,True,needs_clarification,,,,,"[""missing_parameter"", ""ambiguous_hazard""]",[]
+A14,ambiguous_invalid,在通勤高峰时段按中等约束选择15个设施。,qwen3.5:9b,2026-08-12T01:41:20.073249+00:00,"{
+  ""status"": ""needs_clarification"",
+  ""time_scenario"": null,
+  ""hazard_scenario"": null,
+  ""p"": null,
+  ""objective"": null,
+  ""issues"": [
+    ""missing_parameter"",
+    ""ambiguous_time""
+  ]
+}","{""status"": ""needs_clarification"", ""time_scenario"": null, ""hazard_scenario"": null, ""p"": null, ""objective"": null, ""issues"": [""missing_parameter"", ""ambiguous_time""]}",True,True,needs_clarification,,,,,"[""missing_parameter"", ""ambiguous_time""]",[]
+A15,ambiguous_invalid,早高峰在有一定风险排除的情况下选择5处设施。,qwen3.5:9b,2026-08-12T01:41:21.803300+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""morning"",
+  ""hazard_scenario"": ""moderate"",
+  ""p"": 5,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""morning"", ""hazard_scenario"": ""moderate"", ""p"": 5, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,morning,moderate,5,weighted_p_median,[],[]
+A16,ambiguous_invalid,请在夜间采用严格候选约束，但设施数量稍微多一些。,qwen3.5:9b,2026-08-12T01:41:23.194452+00:00,"{
+  ""status"": ""needs_clarification"",
+  ""time_scenario"": null,
+  ""hazard_scenario"": null,
+  ""p"": null,
+  ""objective"": null,
+  ""issues"": [
+    ""missing_parameter"",
+    ""ambiguous_hazard""
+  ]
+}","{""status"": ""needs_clarification"", ""time_scenario"": null, ""hazard_scenario"": null, ""p"": null, ""objective"": null, ""issues"": [""missing_parameter"", ""ambiguous_hazard""]}",True,True,needs_clarification,,,,,"[""missing_parameter"", ""ambiguous_hazard""]",[]
+A17,ambiguous_invalid,早高峰和晚高峰都要考虑，分别还是合并你自行决定；基准情景p=10。,qwen3.5:9b,2026-08-12T01:41:24.947713+00:00,"{
+  ""status"": ""needs_clarification"",
+  ""time_scenario"": null,
+  ""hazard_scenario"": null,
+  ""p"": null,
+  ""objective"": null,
+  ""issues"": [
+    ""ambiguous_time""
+  ]
+}","{""status"": ""needs_clarification"", ""time_scenario"": null, ""hazard_scenario"": null, ""p"": null, ""objective"": null, ""issues"": [""ambiguous_time""]}",True,True,needs_clarification,,,,,"[""ambiguous_time""]",[]
+A18,ambiguous_invalid,晚高峰先按baseline，若不满意再自动换成strict，选择10个设施。,qwen3.5:9b,2026-08-12T01:41:26.463255+00:00,"{
+  ""status"": ""needs_clarification"",
+  ""time_scenario"": null,
+  ""hazard_scenario"": null,
+  ""p"": null,
+  ""objective"": null,
+  ""issues"": [
+    ""missing_parameter"",
+    ""ambiguous_hazard""
+  ]
+}","{""status"": ""needs_clarification"", ""time_scenario"": null, ""hazard_scenario"": null, ""p"": null, ""objective"": null, ""issues"": [""missing_parameter"", ""ambiguous_hazard""]}",True,True,needs_clarification,,,,,"[""missing_parameter"", ""ambiguous_hazard""]",[]
+A19,ambiguous_invalid,夜间中等约束选15个设施，同时优化建设成本和公平性。,qwen3.5:9b,2026-08-12T01:41:28.210856+00:00,"{
+  ""status"": ""needs_clarification"",
+  ""time_scenario"": null,
+  ""hazard_scenario"": null,
+  ""p"": null,
+  ""objective"": null,
+  ""issues"": [
+    ""ambiguous_time"",
+    ""missing_parameter""
+  ]
+}","{""status"": ""needs_clarification"", ""time_scenario"": null, ""hazard_scenario"": null, ""p"": null, ""objective"": null, ""issues"": [""ambiguous_time"", ""missing_parameter""]}",True,True,needs_clarification,,,,,"[""ambiguous_time"", ""missing_parameter""]",[]
+A20,ambiguous_invalid,从候选点中找一些离人群最近的地方作为避难所。,qwen3.5:9b,2026-08-12T01:41:30.062163+00:00,"{
+  ""status"": ""needs_clarification"",
+  ""time_scenario"": null,
+  ""hazard_scenario"": null,
+  ""p"": null,
+  ""objective"": null,
+  ""issues"": [
+    ""missing_parameter"",
+    ""ambiguous_time"",
+    ""ambiguous_hazard""
+  ]
+}","{""status"": ""needs_clarification"", ""time_scenario"": null, ""hazard_scenario"": null, ""p"": null, ""objective"": null, ""issues"": [""missing_parameter"", ""ambiguous_time"", ""ambiguous_hazard""]}",True,True,needs_clarification,,,,,"[""missing_parameter"", ""ambiguous_time"", ""ambiguous_hazard""]",[]
+C01,composite,考虑晚高峰时期的流动活动需求，在采用中等程度候选约束后设置10个避难所，并尽量降低需求到设施的总体道路网络距离。,qwen3.5:9b,2026-08-12T01:40:30.009218+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""evening"",
+  ""hazard_scenario"": ""moderate"",
+  ""p"": 10,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""evening"", ""hazard_scenario"": ""moderate"", ""p"": 10, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,evening,moderate,10,weighted_p_median,[],[]
+C02,composite,如果执行最严格的候选安全策略，请面向夜间需求规划15个避难设施，以加权道路网络距离最小为目标。,qwen3.5:9b,2026-08-12T01:40:31.496429+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""night"",
+  ""hazard_scenario"": ""strict"",
+  ""p"": 15,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""night"", ""hazard_scenario"": ""strict"", ""p"": 15, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,night,strict,15,weighted_p_median,[],[]
+C03,composite,为比较早高峰的规划表现，请保留完整候选集合，选取5处设施，并按流动需求权重最小化网络距离。,qwen3.5:9b,2026-08-12T01:40:32.880057+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""morning"",
+  ""hazard_scenario"": ""baseline"",
+  ""p"": 5,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""morning"", ""hazard_scenario"": ""baseline"", ""p"": 5, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,morning,baseline,5,weighted_p_median,[],[]
+C04,composite,本次只分析下班高峰：排除严格情景下不允许的候选点，将设施数固定为10，目标仍是加权P中位。,qwen3.5:9b,2026-08-12T01:40:34.284386+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""evening"",
+  ""hazard_scenario"": ""strict"",
+  ""p"": 10,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""evening"", ""hazard_scenario"": ""strict"", ""p"": 10, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,evening,strict,10,weighted_p_median,[],[]
+C05,composite,针对夜间流动活动分布，不做额外候选排除，在438个候选中确定10个设施，使加权网络距离尽可能小。,qwen3.5:9b,2026-08-12T01:40:35.678426+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""night"",
+  ""hazard_scenario"": ""baseline"",
+  ""p"": 10,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""night"", ""hazard_scenario"": ""baseline"", ""p"": 10, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,night,baseline,10,weighted_p_median,[],[]
+C06,composite,请建立早晨通勤高峰方案，采用中等候选可行性限制并开放15处，优化总体加权道路距离。,qwen3.5:9b,2026-08-12T01:40:37.078410+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""morning"",
+  ""hazard_scenario"": ""moderate"",
+  ""p"": 15,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""morning"", ""hazard_scenario"": ""moderate"", ""p"": 15, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,morning,moderate,15,weighted_p_median,[],[]
+C07,composite,虽然需要报告道路网络距离，但规划情景固定为晚高峰、基准候选集合和p=5，使用现有加权P中位目标。,qwen3.5:9b,2026-08-12T01:40:38.533973+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""evening"",
+  ""hazard_scenario"": ""baseline"",
+  ""p"": 5,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""evening"", ""hazard_scenario"": ""baseline"", ""p"": 5, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,evening,baseline,5,weighted_p_median,[],[]
+C08,composite,面向夜间需求，在中等灾害候选约束下只选5个设施；位置由确定性优化器按加权距离目标计算。,qwen3.5:9b,2026-08-12T01:40:39.912929+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""night"",
+  ""hazard_scenario"": ""moderate"",
+  ""p"": 5,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""night"", ""hazard_scenario"": ""moderate"", ""p"": 5, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,night,moderate,5,weighted_p_median,[],[]
+C09,composite,早高峰方案应采用严格候选限制，设施数量为10，求解时最小化归一化流动活动权重对应的网络距离。,qwen3.5:9b,2026-08-12T01:40:41.319844+00:00,"{
+  ""status"": ""invalid"",
+  ""time_scenario"": ""morning"",
+  ""hazard_scenario"": ""strict"",
+  ""p"": null,
+  ""objective"": null,
+  ""issues"": [
+    ""missing_parameter"",
+    ""unsupported_objective""
+  ]
+}","{""status"": ""invalid"", ""time_scenario"": ""morning"", ""hazard_scenario"": ""strict"", ""p"": null, ""objective"": null, ""issues"": [""missing_parameter"", ""unsupported_objective""]}",True,True,invalid,morning,strict,,,"[""missing_parameter"", ""unsupported_objective""]",[]
+C10,composite,请为傍晚通勤高峰准备15设施方案，不额外删除候选设施，优化准则为weighted p-median。,qwen3.5:9b,2026-08-12T01:40:43.022124+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""evening"",
+  ""hazard_scenario"": ""baseline"",
+  ""p"": 15,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""evening"", ""hazard_scenario"": ""baseline"", ""p"": 15, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,evening,baseline,15,weighted_p_median,[],[]
+C11,composite,在夜深时段的需求场景中，使用严格的候选可行性约束，令p=5，并交给MHA-PM最小化加权网络距离。,qwen3.5:9b,2026-08-12T01:40:44.413147+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""night"",
+  ""hazard_scenario"": ""strict"",
+  ""p"": 5,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""night"", ""hazard_scenario"": ""strict"", ""p"": 5, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,night,strict,5,weighted_p_median,[],[]
+C12,composite,为了测试候选约束影响，早高峰采用baseline，选10处避难设施，目标为需求权重下的总网络距离最小。,qwen3.5:9b,2026-08-12T01:40:45.778849+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""morning"",
+  ""hazard_scenario"": ""baseline"",
+  ""p"": 10,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""morning"", ""hazard_scenario"": ""baseline"", ""p"": 10, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,morning,baseline,10,weighted_p_median,[],[]
+C13,composite,考虑晚高峰流动活动并采用moderate情景，开放15个设施；不要人工选址，由weighted p-median求解。,qwen3.5:9b,2026-08-12T01:40:47.183296+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""evening"",
+  ""hazard_scenario"": ""moderate"",
+  ""p"": 15,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""evening"", ""hazard_scenario"": ""moderate"", ""p"": 15, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,evening,moderate,15,weighted_p_median,[],[]
+C14,composite,夜间规划使用完整候选集，设施数设成15，以需求活动权重乘网络距离之和最小为目标。,qwen3.5:9b,2026-08-12T01:40:48.639546+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""night"",
+  ""hazard_scenario"": ""baseline"",
+  ""p"": 15,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""night"", ""hazard_scenario"": ""baseline"", ""p"": 15, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,night,baseline,15,weighted_p_median,[],[]
+C15,composite,先限定为早晨高峰，再使用最严格候选可行性条件，规划5个设施并执行现有加权P中位模型。,qwen3.5:9b,2026-08-12T01:40:50.052796+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""morning"",
+  ""hazard_scenario"": ""strict"",
+  ""p"": 5,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""morning"", ""hazard_scenario"": ""strict"", ""p"": 5, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,morning,strict,5,weighted_p_median,[],[]
+C16,composite,这是一个晚高峰、中等灾害候选约束的规划请求：p取5，优化目标保持为加权道路网络距离。,qwen3.5:9b,2026-08-12T01:40:51.509026+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""evening"",
+  ""hazard_scenario"": ""moderate"",
+  ""p"": 5,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""evening"", ""hazard_scenario"": ""moderate"", ""p"": 5, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,evening,moderate,5,weighted_p_median,[],[]
+C17,composite,请按夜间需求权重进行配置，moderate候选情景下开放10处设施，以现有MHA-PM目标计算。,qwen3.5:9b,2026-08-12T01:40:52.943143+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""night"",
+  ""hazard_scenario"": ""moderate"",
+  ""p"": 10,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""night"", ""hazard_scenario"": ""moderate"", ""p"": 10, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,night,moderate,10,weighted_p_median,[],[]
+C18,composite,对早高峰进行设施数敏感性调用，本次p=15且不作额外候选排除，仍最小化加权网络距离。,qwen3.5:9b,2026-08-12T01:40:54.332099+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""morning"",
+  ""hazard_scenario"": ""baseline"",
+  ""p"": 15,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""morning"", ""hazard_scenario"": ""baseline"", ""p"": 15, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,morning,baseline,15,weighted_p_median,[],[]
+C19,composite,为下班时段运行严格情景，固定开放5个候选避难设施，并让确定性求解器最小化加权距离。,qwen3.5:9b,2026-08-12T01:40:55.738909+00:00,"{
+  ""status"": ""needs_clarification"",
+  ""time_scenario"": null,
+  ""hazard_scenario"": null,
+  ""p"": null,
+  ""objective"": null,
+  ""issues"": [
+    ""missing_parameter"",
+    ""ambiguous_time""
+  ]
+}","{""status"": ""needs_clarification"", ""time_scenario"": null, ""hazard_scenario"": null, ""p"": null, ""objective"": null, ""issues"": [""missing_parameter"", ""ambiguous_time""]}",True,True,needs_clarification,,,,,"[""missing_parameter"", ""ambiguous_time""]",[]
+C20,composite,夜间需求采用strict候选规则和p=10；请求只解析参数，随后由MHA-PM求解weighted_p_median。,qwen3.5:9b,2026-08-12T01:40:57.396172+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""night"",
+  ""hazard_scenario"": ""strict"",
+  ""p"": 10,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""night"", ""hazard_scenario"": ""strict"", ""p"": 10, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,night,strict,10,weighted_p_median,[],[]
+S01,simple,请在早高峰情景下选择10个避难所，不设置额外的风险排除。,qwen3.5:9b,2026-08-12T01:40:01.635436+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""morning"",
+  ""hazard_scenario"": ""baseline"",
+  ""p"": 10,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""morning"", ""hazard_scenario"": ""baseline"", ""p"": 10, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,morning,baseline,10,weighted_p_median,[],[]
+S02,simple,夜间采用严格的灾害约束，规划5个避难设施。,qwen3.5:9b,2026-08-12T01:40:03.070012+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""night"",
+  ""hazard_scenario"": ""strict"",
+  ""p"": 5,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""night"", ""hazard_scenario"": ""strict"", ""p"": 5, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,night,strict,5,weighted_p_median,[],[]
+S03,simple,晚高峰选择15个避难所，采用中等程度的灾害候选约束。,qwen3.5:9b,2026-08-12T01:40:04.414542+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""evening"",
+  ""hazard_scenario"": ""moderate"",
+  ""p"": 15,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""evening"", ""hazard_scenario"": ""moderate"", ""p"": 15, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,evening,moderate,15,weighted_p_median,[],[]
+S04,simple,按早晨通勤高峰需求，在基准情景中设置5处避难设施。,qwen3.5:9b,2026-08-12T01:40:05.842369+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""morning"",
+  ""hazard_scenario"": ""baseline"",
+  ""p"": 5,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""morning"", ""hazard_scenario"": ""baseline"", ""p"": 5, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,morning,baseline,5,weighted_p_median,[],[]
+S05,simple,为晚高峰规划10个设施，并使用严格候选约束。,qwen3.5:9b,2026-08-12T01:40:07.202816+00:00,"{
+  ""status"": ""needs_clarification"",
+  ""time_scenario"": null,
+  ""hazard_scenario"": null,
+  ""p"": null,
+  ""objective"": null,
+  ""issues"": [
+    ""missing_parameter"",
+    ""ambiguous_time""
+  ]
+}","{""status"": ""needs_clarification"", ""time_scenario"": null, ""hazard_scenario"": null, ""p"": null, ""objective"": null, ""issues"": [""missing_parameter"", ""ambiguous_time""]}",True,True,needs_clarification,,,,,"[""missing_parameter"", ""ambiguous_time""]",[]
+S06,simple,夜间需求采用基准约束，选取15个候选避难设施。,qwen3.5:9b,2026-08-12T01:40:08.909459+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""night"",
+  ""hazard_scenario"": ""baseline"",
+  ""p"": 15,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""night"", ""hazard_scenario"": ""baseline"", ""p"": 15, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,night,baseline,15,weighted_p_median,[],[]
+S07,simple,中等灾害约束下，请为早高峰配置15个避难所。,qwen3.5:9b,2026-08-12T01:40:10.256349+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""morning"",
+  ""hazard_scenario"": ""moderate"",
+  ""p"": 15,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""morning"", ""hazard_scenario"": ""moderate"", ""p"": 15, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,morning,moderate,15,weighted_p_median,[],[]
+S08,simple,不额外排除候选设施，针对晚高峰选5个避难所。,qwen3.5:9b,2026-08-12T01:40:11.683551+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""evening"",
+  ""hazard_scenario"": ""baseline"",
+  ""p"": 5,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""evening"", ""hazard_scenario"": ""baseline"", ""p"": 5, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,evening,baseline,5,weighted_p_median,[],[]
+S09,simple,请用最严格的候选限制处理夜间情景，设施数设为10。,qwen3.5:9b,2026-08-12T01:40:13.059190+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""night"",
+  ""hazard_scenario"": ""strict"",
+  ""p"": 10,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""night"", ""hazard_scenario"": ""strict"", ""p"": 10, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,night,strict,10,weighted_p_median,[],[]
+S10,simple,早高峰、中等候选约束、p等于10。,qwen3.5:9b,2026-08-12T01:40:14.407483+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""morning"",
+  ""hazard_scenario"": ""moderate"",
+  ""p"": 10,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""morning"", ""hazard_scenario"": ""moderate"", ""p"": 10, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,morning,moderate,10,weighted_p_median,[],[]
+S11,simple,晚间高峰按基准情景规划15处设施。,qwen3.5:9b,2026-08-12T01:40:15.837516+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""evening"",
+  ""hazard_scenario"": ""baseline"",
+  ""p"": 15,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""evening"", ""hazard_scenario"": ""baseline"", ""p"": 15, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,evening,baseline,15,weighted_p_median,[],[]
+S12,simple,夜间设置5处设施，采用中等灾害候选约束。,qwen3.5:9b,2026-08-12T01:40:17.244622+00:00,"{
+  ""status"": ""needs_clarification"",
+  ""time_scenario"": null,
+  ""hazard_scenario"": null,
+  ""p"": null,
+  ""objective"": null,
+  ""issues"": [
+    ""missing_parameter"",
+    ""ambiguous_time""
+  ]
+}","{""status"": ""needs_clarification"", ""time_scenario"": null, ""hazard_scenario"": null, ""p"": null, ""objective"": null, ""issues"": [""missing_parameter"", ""ambiguous_time""]}",True,True,needs_clarification,,,,,"[""missing_parameter"", ""ambiguous_time""]",[]
+S13,simple,严格约束候选避难设施，为早高峰选择5处。,qwen3.5:9b,2026-08-12T01:40:18.928295+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""morning"",
+  ""hazard_scenario"": ""strict"",
+  ""p"": 5,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""morning"", ""hazard_scenario"": ""strict"", ""p"": 5, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,morning,strict,5,weighted_p_median,[],[]
+S14,simple,为晚高峰需求选择10处，保持基准候选集合。,qwen3.5:9b,2026-08-12T01:40:20.279482+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""evening"",
+  ""hazard_scenario"": ""baseline"",
+  ""p"": 10,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""evening"", ""hazard_scenario"": ""baseline"", ""p"": 10, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,evening,baseline,10,weighted_p_median,[],[]
+S15,simple,夜间、无额外候选排除、p=10。,qwen3.5:9b,2026-08-12T01:40:21.659811+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""night"",
+  ""hazard_scenario"": ""baseline"",
+  ""p"": 10,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""night"", ""hazard_scenario"": ""baseline"", ""p"": 10, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,night,baseline,10,weighted_p_median,[],[]
+S16,simple,早晨高峰选15个设施，执行严格灾害约束。,qwen3.5:9b,2026-08-12T01:40:23.023165+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""morning"",
+  ""hazard_scenario"": ""strict"",
+  ""p"": 15,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""morning"", ""hazard_scenario"": ""strict"", ""p"": 15, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,morning,strict,15,weighted_p_median,[],[]
+S17,simple,晚高峰采用中等候选限制并设置5个避难所。,qwen3.5:9b,2026-08-12T01:40:24.402354+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""evening"",
+  ""hazard_scenario"": ""moderate"",
+  ""p"": 5,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""evening"", ""hazard_scenario"": ""moderate"", ""p"": 5, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,evening,moderate,5,weighted_p_median,[],[]
+S18,simple,夜间按中等风险约束规划10个设施。,qwen3.5:9b,2026-08-12T01:40:25.794471+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""night"",
+  ""hazard_scenario"": ""moderate"",
+  ""p"": 10,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""night"", ""hazard_scenario"": ""moderate"", ""p"": 10, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,night,moderate,10,weighted_p_median,[],[]
+S19,simple,基准候选情景下，为早高峰选择15处避难设施。,qwen3.5:9b,2026-08-12T01:40:27.168943+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""morning"",
+  ""hazard_scenario"": ""baseline"",
+  ""p"": 15,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""morning"", ""hazard_scenario"": ""baseline"", ""p"": 15, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,morning,baseline,15,weighted_p_median,[],[]
+S20,simple,严格候选约束下，晚高峰设施数量取15。,qwen3.5:9b,2026-08-12T01:40:28.603448+00:00,"{
+  ""status"": ""valid"",
+  ""time_scenario"": ""evening"",
+  ""hazard_scenario"": ""strict"",
+  ""p"": 15,
+  ""objective"": ""weighted_p_median"",
+  ""issues"": []
+}","{""status"": ""valid"", ""time_scenario"": ""evening"", ""hazard_scenario"": ""strict"", ""p"": 15, ""objective"": ""weighted_p_median"", ""issues"": []}",True,True,valid,evening,strict,15,weighted_p_median,[],[]

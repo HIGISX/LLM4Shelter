@@ -1,0 +1,5 @@
+﻿request_type,gold_status,count
+ambiguous_invalid,invalid,10
+ambiguous_invalid,needs_clarification,10
+composite,valid,20
+simple,valid,20

@@ -1,0 +1,4 @@
+﻿verification_solver,scenario_id,status,reason,gurobi_status,gurobi_objective,objective_difference,selected_set_match
+HiGHS,Morning_baseline_p10,NOT_RUN,highspy and SciPy/HiGHS are not installed in the current environment,OPTIMAL,1654.034470174065,,
+HiGHS,Evening_moderate_p10,NOT_RUN,highspy and SciPy/HiGHS are not installed in the current environment,OPTIMAL,1597.8829172404976,,
+HiGHS,Night_strict_p10,NOT_RUN,highspy and SciPy/HiGHS are not installed in the current environment,OPTIMAL,1539.248222065436,,

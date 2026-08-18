@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LLMforShelter Optimization Request",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["time_scenario", "hazard_scenario", "p", "objective"],
+  "properties": {
+    "time_scenario": {
+      "type": "string",
+      "enum": ["Morning", "Evening", "Night"]
+    },
+    "hazard_scenario": {
+      "type": "string",
+      "enum": ["baseline", "moderate", "strict"]
+    },
+    "p": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "objective": {
+      "const": "weighted_p_median"
+    }
+  }
+}

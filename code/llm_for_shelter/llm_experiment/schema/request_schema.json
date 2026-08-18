@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.llmforshelter/request_schema.json",
+  "title": "MHA-PM Planning Request",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "status",
+    "time_scenario",
+    "hazard_scenario",
+    "p",
+    "objective",
+    "issues"
+  ],
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": ["valid", "needs_clarification", "invalid"]
+    },
+    "time_scenario": {
+      "type": ["string", "null"],
+      "enum": ["morning", "evening", "night", null]
+    },
+    "hazard_scenario": {
+      "type": ["string", "null"],
+      "enum": ["baseline", "moderate", "strict", null]
+    },
+    "p": {
+      "type": ["integer", "null"],
+      "minimum": 5,
+      "maximum": 15
+    },
+    "objective": {
+      "type": ["string", "null"],
+      "enum": ["weighted_p_median", null]
+    },
+    "issues": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "missing_parameter",
+          "ambiguous_time",
+          "ambiguous_hazard",
+          "invalid_p",
+          "conflicting_time",
+          "conflicting_hazard",
+          "unsupported_objective",
+          "other"
+        ]
+      }
+    }
+  }
+}
