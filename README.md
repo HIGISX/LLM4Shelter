@@ -1,8 +1,6 @@
 # LLMforShelter — minimal reproducibility package
 
-中文说明见下文。本目录是从完整研究工作区整理出的**最小可复现候选发布包**，用于公开 MHA-PM 空间优化实验和 E5-Final 自然语言规划接口实验。它不包含论文源文件、原始城市级下载数据、地图底图、模型权重、缓存或内部开发日志。
 
-> Release status: technically organized and QA-checked, but **not ready for public redistribution until the authors choose a code license and complete the source-data attribution review**. See `LICENSE_PENDING.md` and `OPEN_SOURCE_AUDIT.md`.
 
 ## Research scope
 
